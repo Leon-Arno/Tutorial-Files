@@ -1,5 +1,18 @@
 const notes = ['Item 1', 'Item 2', 'Item 3'];
-
+const notesObj = [
+  {
+    title: 'Johnny Bravo',
+    body: 'Hey Baby!'
+  },
+  {
+    title: 'Scooby Doo',
+    body: `Let's go to the kitchen`
+  },
+  {
+    title: 'Agu bu Egbe',
+    body: 'Na meee!'
+  }
+];
 // console.log(notes.length);
 // console.log(notes[notes.length - 1]);
 
@@ -51,3 +64,14 @@ function test(color) {
   return fruits.filter(f => f.color == color);
 }
 console.log(test(''));
+
+for (let count = 0; count < notes.length; count++) {
+  console.log(notes[count]);
+}
+for (let count = notes.length - 1; count >= 0; count--) {
+  console.log(notes[count]);
+}
+
+// Searching array
+console.log(notes.length);
+console.log(notes.indexOf('Item 1'));
